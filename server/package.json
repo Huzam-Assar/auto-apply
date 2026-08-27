@@ -1,0 +1,23 @@
+{
+  "name": "teacher-automation-test-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node tests/matcher.test.js",
+    "inspect-db": "node scripts/inspectDatabase.js",
+    "backfill-automation-timestamps": "node scripts/backfillAutomationApplicationTimestamps.js",
+    "sync-automation-application-counts": "node scripts/syncAutomatedTuitionApplicationCounts.js",
+    "process-automation": "node scripts/processTeacherAutomation.js"
+  },
+  "dependencies": {
+    "@google/genai": "^0.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2",
+    "mongoose": "^8.18.0",
+    "teacher-automation-test": "file:.."
+  }
+}

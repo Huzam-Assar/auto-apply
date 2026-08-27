@@ -1,0 +1,13 @@
+{
+  "name": "teacher-automation-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone AI teacher-to-tuition automation testing application",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "test:server": "npm --prefix server test",
+    "build:client": "npm --prefix client run build"
+  }
+}
+
